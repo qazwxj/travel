@@ -6,13 +6,13 @@ import router from './router'
 //300秒延迟问题
 import fastClick from 'fastclick'
 // 移动端css样式初始化
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 
 // 1像素边框
-import './assets/styles/border.css'
+import 'styles/border.css'
 
 //引入字体图标
-import './assets/styles/iconfont.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
