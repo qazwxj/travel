@@ -1,8 +1,8 @@
 <template>
   <div class="icons">
-     <swiper >
-        <swiper-slide>
-            <div class="icon" v-for="item of iconList" :key="item.id">
+     <swiper>
+        <swiper-slide v-for="(page,index) of pages" :key="index">
+            <div class="icon" v-for="item of page" :key="item.id">
               <div class="icon-img">
                 <img class="icon-img-content" :src="item.imgurl">
               </div>
@@ -20,7 +20,7 @@ export default {
       iconList:[
         {id:1,
         imgurl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc:'景点门票'},
+        desc:'景点门'},
         {id:2,
         imgurl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
         desc:'东莞必游'},
@@ -47,7 +47,6 @@ export default {
         desc:'广州融创'},
 
       ]
-
     }
   },
   computed:{
@@ -68,6 +67,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+@import '~styles/mixins.styl'
   .icons >>> .swiper-container
       height:0
       padding-bottom:50%
@@ -98,6 +98,7 @@ export default {
           height:.44rem
           line-height:.44rem
           color:$darkTextColor
-          text-align:center  
+          text-align:center 
+          ellipsis() 
             
 </style>
