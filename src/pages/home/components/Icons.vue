@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-     <swiper>
+     <swiper :options="swiperOption" >
         <swiper-slide v-for="(page,index) of pages" :key="index">
             <div class="icon" v-for="item of page" :key="item.id">
               <div class="icon-img">
@@ -45,7 +45,10 @@ export default {
          {id:9,
         imgurl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/cba147cf6cfcea7109d0bff6aac6f626.png',
         desc:'广州融创'},
-      ]
+      ],
+      swiperOption:{
+        autoplay:false
+      }
     }
   },
   computed:{
