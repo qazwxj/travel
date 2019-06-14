@@ -1,6 +1,6 @@
 <template>
     <div class="search">
-        <input class="search-input" type="text" placeholder="输入城市名或拼音">
+        <input type="text" class="search-input" placeholder="输入城市名或拼音" >
     </div>
 </template>
 
@@ -23,6 +23,4 @@ export default {
             text-align:center
             border-radius:.06rem  
             color:#fff
-        
-
 </style>
