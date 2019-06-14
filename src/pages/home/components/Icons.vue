@@ -6,7 +6,7 @@
               <div class="icon-img">
                 <img class="icon-img-content" :src="item.imgurl">
               </div>
-              <p  class="icon-desc" >{{item.desc}}</p>
+              <p  class="icon-desc">{{item.desc}}</p>
             </div>
         </swiper-slide>
      </swiper>
@@ -45,7 +45,6 @@ export default {
          {id:9,
         imgurl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/cba147cf6cfcea7109d0bff6aac6f626.png',
         desc:'广州融创'},
-
       ]
     }
   },
@@ -62,7 +61,6 @@ export default {
       return pages
     }
   }
-
 }
 </script>
 <style lang="stylus" scoped>
@@ -71,6 +69,8 @@ export default {
   .icons >>> .swiper-container
       height:0
       padding-bottom:50%
+  .icons  
+     margin-top:.1rem  
   .icon
       position:relative
       overflow:hidden
@@ -79,17 +79,17 @@ export default {
       padding-bottom:25%
       height:0
       .icon-img
-       position:absolute
-       top:0
-       left:0
-       right:0
-       bottom:.44rem
-       box-sizing: border-box
-       padding:.1rem
+        position:absolute
+        top:0
+        left:0
+        right:0
+        bottom:.44rem
+        box-sizing: border-box
+        padding:.1rem
        .icon-img-content
-        display:block
-        margin:0 auto
-        height:100%
+          display:block
+          margin:0 auto
+          height:100%
       .icon-desc
           position:absolute
           left:0
@@ -100,5 +100,4 @@ export default {
           color:$darkTextColor
           text-align:center 
           ellipsis() 
-            
 </style>
