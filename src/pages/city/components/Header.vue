@@ -32,4 +32,8 @@ export default {
             text-align:center
             font-size:.4rem
             color:#fff
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> city.search.logic
