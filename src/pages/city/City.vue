@@ -6,7 +6,6 @@
          <city-alphabet></city-alphabet>
     </div>
 </template>
-
 <script>
 import CityHeader from './components/Header'
 import CitySearch from './components/Search'
