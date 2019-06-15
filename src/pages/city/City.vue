@@ -19,7 +19,6 @@ export default {
       CitySearch,
       CityList,
       CityAlphabet,
-      
     }
 }
 </script>
