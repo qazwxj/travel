@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <div class=" recommend-title">热门推销</div>
@@ -56,5 +55,4 @@ export default {
             padding: 0 .2rem 
             border-radius:.06rem 
             color:#fff
-
 </style>

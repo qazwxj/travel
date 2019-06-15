@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <div class=" recommend-title">周末去哪儿</div>

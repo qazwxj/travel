@@ -8,7 +8,6 @@
     <home-weekend :list="weekendList"></home-weekend>
   </div>
 </div>
-  
 </template>
 <script>
 import HomeHeader from './components/Header'
@@ -60,5 +59,4 @@ export default {
 </script>
 
 <style>
-
 </style>

@@ -27,7 +27,6 @@ export default {
       return this.list.length
     }
   }
-
 }
 </script>
 <style lang="stylus" scoped>
@@ -40,5 +39,4 @@ export default {
     padding-bottom:28%
     .swiper-img
       width:100%
-
 </style>
