@@ -65,8 +65,6 @@ export default {
    mounted (){
        this.scroll = new Bscroll(this.$refs.search)
    },
-
-
 }
 </script>
 
@@ -96,6 +94,4 @@ export default {
            padding-left:.2rem 
            color:#666
            background:#fff
-
 </style>
-© 2019 GitHub, Inc.

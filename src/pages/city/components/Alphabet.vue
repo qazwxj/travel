@@ -82,4 +82,3 @@ export default {
         text-align:center
         color:$bgColor
 </style>
-© 2019 GitHub, Inc.

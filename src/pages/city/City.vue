@@ -1,4 +1,3 @@
-    
 <template>
     <div>
         <city-header></city-header>
@@ -56,9 +55,4 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-<<<<<<< HEAD
 </style>
-=======
-</style>
-© 2019 GitHub, Inc.
->>>>>>> city.search.logic
