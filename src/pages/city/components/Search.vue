@@ -23,3 +23,4 @@ export default {
           text-align:center  
           border-radius:.06rem
 </style>
+© 2019 GitHub, Inc.
