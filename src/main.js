@@ -1,4 +1,3 @@
-
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -15,6 +14,9 @@ import 'styles/iconfont.css'
 //引入轮播插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+//引入vuex
+import store from './store'
+
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
@@ -26,6 +28,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
