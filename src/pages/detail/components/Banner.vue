@@ -1,18 +1,18 @@
 <template>
  <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_600x330_9fee26e9.jpg" >
+      <img class="banner-img" :src="bannerImg" >
       <div class="banner-info">
           <div class="banner-title">
-              大连圣亚海洋世界(AAAA景区)
+            {{this.sightName}}
           </div>
           <div class="banner-number">
               <span class="iconfont banner-icon">&#xe6df;</span>
-              39
+               {{this.bannerImgs.length}}
             </div>
       </div>
     </div>
-    <common-gallary :imgs="imgs" 
+    <common-gallary :imgs="bannerImgs" 
     v-show="showGallary"
     @close="handleGallaryClose"
     ></common-gallary>
@@ -24,11 +24,14 @@
 import CommonGallary from 'common/gallary/Gallary'
 export default {
   name:'DetailBanner',
+  props: {
+    sightName:String,
+    bannerImg:String,
+    bannerImgs:Array
+  },
   data(){
     return{
-      showGallary:false,
-      imgs:['http://img1.qunarzz.com/sight/p0/1511/ea/ea7eda2c3e879ed90.img.jpg_350x240_d6142a2a.jpg',
-      'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_350x240_90880200.jpg' ]
+      showGallary:false
     }
   },
   methods:{
@@ -54,19 +57,19 @@ export default {
     .banner-img
       width:100%
     .banner-info 
-        display:flex 
-        position:absolute
-        left:0
-        right:0
-        bottom:0
-        line-height:.6rem 
-        color:#fff
-        background-image:linear-gradient(top,rgba(0,0,0,0),
-        rgba(0,0,0,0.8))
-        .banner-title
-          flex:1
-          font-size:.32rem 
-          padding:0 .2rem
+      display:flex 
+      position:absolute
+      left:0
+      right:0
+      bottom:0
+      line-height:.6rem 
+      color:#fff
+      background-image:linear-gradient(top,rgba(0,0,0,0),
+      rgba(0,0,0,0.8))
+      .banner-title
+        flex:1
+        font-size:.32rem 
+        padding:0 .2rem
         .banner-number
           height:.32rem 
           lie-height:.32rem 
@@ -77,5 +80,4 @@ export default {
           font-size:.24rem 
           .banner-icon
             font-size:.24rem 
-
 </style>
